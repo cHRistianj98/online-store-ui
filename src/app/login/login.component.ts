@@ -27,7 +27,6 @@ export class LoginComponent {
   }
 
   onSubmit() {
-    // Sprawdź czy formularz jest poprawny
     if (this.loginForm.valid) {
       this.http.post<LoginResponseDto>(
         'http://localhost:8080/auth/login',
